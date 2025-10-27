@@ -74,7 +74,7 @@ public class TrailerDownloadScheduledTask : IScheduledTask
         [
             new TaskTriggerInfo
             {
-                Type = TaskTriggerInfo.TriggerDaily,
+                Type = TaskTriggerInfoType.DailyTrigger,
                 TimeOfDayTicks = TimeSpan.FromHours(7).Add(TimeSpan.FromMinutes(30)).Ticks, // Run daily at 7:30 AM
             }
         ];
